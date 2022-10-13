@@ -17,7 +17,7 @@ const fillBlock = (index, arr) => {
   if(block[blockColumn][blockRow].value) fillBlock(index, arr)
 
   // Generate random value and validation all board
-  let newValue = Math.floor(Math.random() * 10) + 1
+  let newValue = Math.floor(Math.random() * 9) + 1
   let isValidRow = isValidValueByRow(arr, { row: arrRow, value: newValue })
   let isValidColumn = isValidValueByColumn(arr, { column: arrColumn, value: newValue })
   let hasValueInBlock = hasNewValueInBlock(block, newValue)
