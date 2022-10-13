@@ -1,0 +1,24 @@
+.cell {
+  transition: background .2s ease-in-out, color .2s ease-in-out;
+  border: 1px solid #000;
+  color: #808080;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell:not(.default) {
+  cursor: pointer;
+  user-select: none;
+}
+
+.default {
+  color: #000
+}
+
+.cell:not(.default):hover {
+  background: #000;
+  color: #FFF;
+}
