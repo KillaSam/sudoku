@@ -24,7 +24,7 @@ const fillBlock = (index, arr) => {
 
   // Repeat generation of value if value is the same
   while(!isValidRow || !isValidColumn || hasValueInBlock) {
-    newValue = Math.floor(Math.random() * 10) + 1
+    newValue = Math.floor(Math.random() * 9) + 1
     isValidRow = isValidValueByRow(arr, { row: arrRow, value: newValue })
     isValidColumn = isValidValueByColumn(arr, { column: arrColumn, value: newValue })
     hasValueInBlock = hasNewValueInBlock(block, newValue)
